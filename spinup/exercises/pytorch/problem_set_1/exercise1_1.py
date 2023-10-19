@@ -13,6 +13,7 @@ likelihoods of those samples.
 
 """
 
+
 def gaussian_likelihood(x, mu, log_std):
     """
     Args:
@@ -31,7 +32,7 @@ def gaussian_likelihood(x, mu, log_std):
     return torch.zeros(1)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     """
     Run this file to verify your solution.
     """
