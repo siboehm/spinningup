@@ -1,6 +1,8 @@
-Setup:
+Setup (M1 mbp):
 ```bash
-mamba create -n spinningUp python=3.7 gym-classic_control gym-atari gym-box2d cloudpickle==1.2.1  matplotlib ipython joblib  mpi4py numpy pandas pytest psutil scipy seaborn==0.8.1  tqdm pytorch pytorch-cuda=12.1 -c pytorch -c nvidia
+mamba create -n spinningUp python=3.8
+conda activate spinningUp
+pip install -e .
+pip install pyglet==1.5.15 # ignore errors
+python spinup/examples/pytorch/pg_math/1_simple_pg.py --render
 ```
-
-Gym doesn't support py>3.7.
